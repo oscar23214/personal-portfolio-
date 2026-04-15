@@ -2,73 +2,99 @@ const profile = {
   name: "Oscar Patrik Minj",
 
   headline:
-    "Computer Science Student at IISER Bhopal | ML & AI Developer | Research Enthusiast",
+    "Chemical Engineering @ IISER Bhopal | Data Science @ IIT Madras | ML & Embedded Systems",
 
   summary:
-    "Passionate about Machine Learning, TinyML, and full-stack development. Experienced in building real-world AI systems and deploying models on edge devices like Arduino and ESP32.",
+    "Building real-world engineering solutions using Machine Learning, TinyML, and Embedded Systems.",
 
   about:
-    "I am Oscar Patrik Minj, a Computer Science student at IISER Bhopal with a strong interest in Machine Learning, Artificial Intelligence, and real-world problem solving. I enjoy building intelligent systems, deploying models on edge devices, and working on impactful projects combining software and hardware. My goal is to contribute to cutting-edge research and develop scalable AI-driven solutions.",
+    "Chemical Engineering student at IISER Bhopal and Data Science student at IIT Madras. Passionate about combining ML, embedded systems, and engineering for industrial and real-world applications.",
 
   quickFacts: [
-    "📍 IISER Bhopal, IIT Madras",
-    "🎓 B.Tech. M.Tech Chemical Engineering, B.S. Data Science",
-    "💡 ML | AI | TinyML",
-    "🏆 RANK 95 (ST) – IISER Aptitude Test",
+    "🎓 IISER Bhopal – Chemical Engineering",
+    "📊 IIT Madras – Data Science",
+    "🤖 TinyML & Embedded Systems",
     "🔬 Research Intern – IIT Roorkee"
   ],
 
   education: [
     {
-      title: "B.Tech. M.Tech Chemical Engineering",
+      title: "B.S. Chemical Engineering",
       org: "IISER Bhopal",
-      period: "2023 – Present",
-      details: "CGPA: 7.21 | Focus on Chemical Rates, Kinetics, Reaction Processes and Controls"
+      period: "2023 – 2027",
+      details: "CGPA: 7.21 | SGPA: 8.47"
     },
     {
-      title: "B.S. Data Science",
+      title: "B.S. Data Science (Diploma)",
       org: "IIT Madras",
       period: "2023 – Present",
-      details: "CGPA: 6.75 | Focus on statistics, ML, and data analysis"
+      details: "Score: 67.5%"
     },
     {
-      title: "Senior Secondary & Secondary",
+      title: "Class XII (CBSE)",
       org: "St. Michael’s School, Raigarh",
-      period: "2021 – 2023",
-      details: "Senior: 8.48 CGPA | Secondary: 8.25 CGPA"
+      period: "2023",
+      details: "84.8%"
     }
   ],
 
   achievements: [
     {
       year: "2025",
-      title: "IASc NASI INSA Summer Research Fellowship",
-      details: "Selected as Summer Research Fellow at IIT Roorkee"
+      title: "IAS SRFP – IIT Roorkee",
+      details: "Selected for prestigious research fellowship"
     },
     {
-      year: "2023",
-      title: "IISER Aptitude Test Rank 95",
-      details: "Secured Rank 95 in national entrance exam"
-    },
-    {
-      year: "2022",
+      year: "—",
       title: "Academic Excellence Award",
-      details: "Awarded by District Administration, Raigarh"
+      details: "District Administration, Raigarh"
     },
     {
       year: "2017–2022",
-      title: "RollBall State Champion",
-      details: "Winner in multiple state championships"
+      title: "Roll Ball State Champion",
+      details: "Gold Medalist (multiple years)"
     }
   ],
 
   internships: [
     {
-      role: "Summer Research Fellow",
+      role: "Summer Research Fellow Intern",
       org: "IIT Roorkee",
-      period: "May 2025 – Present",
+      period: "May – Jul 2025",
       details:
-        "Developed TinyML models using TensorFlow and CNNs. Deployed optimized models on Arduino for real-time clothing detection."
+        "Built TinyML anomaly detection system on ESP32 using TensorFlow Lite and DHT11 sensors."
+    }
+  ],
+
+  projects: [
+    {
+      title: "Rental Billing Management System",
+      details:
+        "Automated tenant billing, invoice generation, and data management using Flask + SQLite.",
+      period: "May – Jul 2024"
+    }
+  ],
+
+  skills: [
+    "Python", "C", "MATLAB",
+    "TensorFlow", "Keras", "NumPy", "TinyML",
+    "ESP32", "Arduino", "DHT11",
+    "Heat Transfer", "Mass Transfer", "Thermodynamics",
+    "Git", "Docker", "LaTeX"
+  ],
+
+  coursework: [
+    {
+      title: "Chemical Engineering",
+      details: "Heat Transfer, Mass Transfer, Fluid Mechanics, Thermodynamics"
+    },
+    {
+      title: "Mathematics",
+      details: "Calculus, Linear Algebra, Probability, Numerical Methods"
+    },
+    {
+      title: "Computer Science",
+      details: "DSA, Machine Learning, Python, C Programming"
     }
   ],
 
@@ -78,28 +104,21 @@ const profile = {
       org: "IISER Bhopal",
       period: "2023 – Present",
       details:
-        "Organized academic events, managed repositories, and contributed as a core team member."
+        "Organized events, managed repositories, and led student initiatives."
     },
     {
-      role: "LLM Automation Agent Developer",
-      org: "Personal Project",
-      period: "2025 – Present",
+      role: "Cultural Council",
+      org: "IISER Bhopal",
+      period: "—",
       details:
-        "Built AI agent using FastAPI and OpenAI APIs to automate multi-step workflows from natural language."
-    },
-    {
-      role: "AutoGraderAI Developer",
-      org: "Personal Project",
-      period: "2024",
-      details:
-        "Developed an automated assignment evaluation system using LLMs."
+        "Managed 100+ student team and organized large-scale cultural events."
     }
   ],
 
   contact: {
     email: "oscar23@iiserb.ac.in",
     phone: "+91-9340903869",
-    location: "Bhopal, Madhya Pradesh, India",
+    location: "Bhopal, India",
     linkedin: "https://linkedin.com/in/oscar-minj",
     github: "https://github.com/oscarminj"
   }
@@ -108,14 +127,14 @@ const profile = {
 const byId = (id) => document.getElementById(id);
 
 function createCard(item, titleKey, orgKey = "org") {
-  const article = document.createElement("article");
-  article.className = "card";
-  article.innerHTML = `
+  const el = document.createElement("div");
+  el.className = "card";
+  el.innerHTML = `
     <h3>${item[titleKey]}</h3>
-    <p class="meta"><strong>${item[orgKey]}</strong> • ${item.period}</p>
+    ${item.org ? `<p class="meta"><strong>${item[orgKey]}</strong> • ${item.period}</p>` : ""}
     <p>${item.details}</p>
   `;
-  return article;
+  return el;
 }
 
 function render() {
@@ -124,45 +143,49 @@ function render() {
   byId("summary").textContent = profile.summary;
   byId("aboutText").textContent = profile.about;
 
-  byId("quickFacts").innerHTML = profile.quickFacts
-    .map((fact) => `<li>${fact}</li>`)
-    .join("");
+  byId("quickFacts").innerHTML =
+    profile.quickFacts.map(f => `<li>${f}</li>`).join("");
 
   byId("educationList").append(
-    ...profile.education.map((item) => createCard(item, "title"))
+    ...profile.education.map(e => createCard(e, "title"))
   );
 
   byId("achievementsList").append(
-    ...profile.achievements.map((item) => {
-      const block = document.createElement("article");
-      block.className = "timeline-item";
-      block.innerHTML = `
-        <p class="meta">${item.year}</p>
-        <h3>${item.title}</h3>
-        <p>${item.details}</p>
-      `;
-      return block;
+    ...profile.achievements.map(a => {
+      const el = document.createElement("div");
+      el.className = "timeline-item";
+      el.innerHTML = `<p class="meta">${a.year}</p><h3>${a.title}</h3><p>${a.details}</p>`;
+      return el;
     })
   );
 
   byId("internshipList").append(
-    ...profile.internships.map((item) => createCard(item, "role"))
+    ...profile.internships.map(i => createCard(i, "role"))
   );
 
+  byId("projectList").append(
+    ...profile.projects.map(p => createCard(p, "title"))
+  );
+
+  byId("courseList").append(
+    ...profile.coursework.map(c => createCard(c, "title"))
+  );
+
+  byId("skillsList").innerHTML =
+    profile.skills.map(s => `<span>${s}</span>`).join("");
+
   byId("experienceList").append(
-    ...profile.experience.map((item) => createCard(item, "role"))
+    ...profile.experience.map(e => createCard(e, "role"))
   );
 
   byId("contactInfo").innerHTML = `
-    <p><strong>Email:</strong> <a href="mailto:${profile.contact.email}">${profile.contact.email}</a></p>
-    <p><strong>Phone:</strong> <a href="tel:${profile.contact.phone}">${profile.contact.phone}</a></p>
-    <p><strong>Location:</strong> ${profile.contact.location}</p>
-    <p><strong>LinkedIn:</strong> <a href="${profile.contact.linkedin}" target="_blank">${profile.contact.linkedin}</a></p>
-    <p><strong>GitHub:</strong> <a href="${profile.contact.github}" target="_blank">${profile.contact.github}</a></p>
+    <p>Email: ${profile.contact.email}</p>
+    <p><a href="${profile.contact.linkedin}" target="_blank">LinkedIn</a></p>
+    <p><a href="${profile.contact.github}" target="_blank">GitHub</a></p>
   `;
 
   byId("footerText").textContent =
-    `© ${new Date().getFullYear()} ${profile.name} · Built with HTML, CSS, and JavaScript`;
+    `© ${new Date().getFullYear()} ${profile.name}`;
 }
 
 render();
