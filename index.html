@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of a 3rd-year Chemical Engineering student at IISER Bhopal and DIE Diploma student at IIDM."
+    />
+    <title>Portfolio | IISERB + IIDM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#" class="brand">MyPortfolio</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Aspiring Chemical Engineer</p>
+            <h1 id="name">Your Name</h1>
+            <p id="headline" class="headline"></p>
+            <p id="summary" class="summary"></p>
+            <div class="cta-row">
+              <a href="#contact" class="btn primary">Get in touch</a>
+              <a href="#achievements" class="btn ghost">View achievements</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Quick profile details">
+            <h2>Quick Profile</h2>
+            <ul id="quickFacts"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <p id="aboutText"></p>
+        </div>
+      </section>
+
+      <section id="education" class="section alt">
+        <div class="container">
+          <h2>Education</h2>
+          <div id="educationList" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section">
+        <div class="container">
+          <h2>Past Achievements</h2>
+          <div id="achievementsList" class="timeline"></div>
+        </div>
+      </section>
+
+      <section id="internships" class="section alt">
+        <div class="container">
+          <h2>Internships</h2>
+          <div id="internshipList" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Work Experience</h2>
+          <div id="experienceList" class="card-grid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            If you would like to collaborate on research, internships, projects,
+            or opportunities in chemical engineering and industrial innovation,
+            feel free to connect.
+          </p>
+          <div class="contact-box" id="contactInfo"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="footerText"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
