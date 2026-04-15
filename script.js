@@ -11,22 +11,22 @@ const profile = {
     "I am Oscar Patrik Minj, a Computer Science student at IISER Bhopal with a strong interest in Machine Learning, Artificial Intelligence, and real-world problem solving. I enjoy building intelligent systems, deploying models on edge devices, and working on impactful projects combining software and hardware. My goal is to contribute to cutting-edge research and develop scalable AI-driven solutions.",
 
   quickFacts: [
-    "📍 IISER Bhopal",
-    "🎓 B.S. Computer Science",
+    "📍 IISER Bhopal, IIT Madras",
+    "🎓 B.Tech. M.Tech Chemical Engineering, B.S. Data Science",
     "💡 ML | AI | TinyML",
-    "🏆 AIR 95 – IISER Aptitude Test",
+    "🏆 RANK 95 (ST) – IISER Aptitude Test",
     "🔬 Research Intern – IIT Roorkee"
   ],
 
   education: [
     {
-      title: "B.S. Computer Science",
+      title: "B.Tech. M.Tech Chemical Engineering",
       org: "IISER Bhopal",
       period: "2023 – Present",
-      details: "CGPA: 6.95 | Focus on ML, AI, Data Structures, and Systems"
+      details: "CGPA: 7.21 | Focus on Chemical Rates, Kinetics, Reaction Processes and Controls"
     },
     {
-      title: "B.S. Data Science (Online)",
+      title: "B.S. Data Science",
       org: "IIT Madras",
       period: "2023 – Present",
       details: "CGPA: 6.75 | Focus on statistics, ML, and data analysis"
@@ -42,13 +42,13 @@ const profile = {
   achievements: [
     {
       year: "2025",
-      title: "IAS Summer Research Fellowship",
+      title: "IASc NASI INSA Summer Research Fellowship",
       details: "Selected as Summer Research Fellow at IIT Roorkee"
     },
     {
       year: "2023",
       title: "IISER Aptitude Test Rank 95",
-      details: "Secured AIR 95 in national entrance exam"
+      details: "Secured Rank 95 in national entrance exam"
     },
     {
       year: "2022",
@@ -98,7 +98,7 @@ const profile = {
 
   contact: {
     email: "oscar23@iiserb.ac.in",
-    phone: "+91-XXXXXXXXXX",
+    phone: "+91-9340903869",
     location: "Bhopal, Madhya Pradesh, India",
     linkedin: "https://linkedin.com/in/oscar-minj",
     github: "https://github.com/oscarminj"
