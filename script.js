@@ -1,70 +1,107 @@
 const profile = {
-  name: "Your Name",
+  name: "Oscar Patrik Minj",
+
   headline:
-    "3rd-year Chemical Engineering student at IISER Bhopal + DIE Diploma student at IIDM.",
+    "Computer Science Student at IISER Bhopal | ML & AI Developer | Research Enthusiast",
+
   summary:
-    "I am building my career at the intersection of chemical engineering, research, and practical industrial problem-solving. I enjoy converting concepts into real solutions through projects, internships, and collaborative work.",
+    "Passionate about Machine Learning, TinyML, and full-stack development. Experienced in building real-world AI systems and deploying models on edge devices like Arduino and ESP32.",
+
   about:
-    "Currently pursuing Chemical Engineering at IISER Bhopal while also completing a DIE diploma at IIDM. My focus areas include process optimization, sustainability, and data-driven engineering decisions. I am actively seeking opportunities where I can apply both academic and practical knowledge.",
+    "I am Oscar Patrik Minj, a Computer Science student at IISER Bhopal with a strong interest in Machine Learning, Artificial Intelligence, and real-world problem solving. I enjoy building intelligent systems, deploying models on edge devices, and working on impactful projects combining software and hardware. My goal is to contribute to cutting-edge research and develop scalable AI-driven solutions.",
+
   quickFacts: [
-    "3rd Year, Chemical Engineering",
-    "Institute: IISER Bhopal",
-    "Diploma: DIE (IIDM)",
-    "Open to internships and research roles"
+    "📍 IISER Bhopal",
+    "🎓 B.S. Computer Science",
+    "💡 ML | AI | TinyML",
+    "🏆 AIR 95 – IISER Aptitude Test",
+    "🔬 Research Intern – IIT Roorkee"
   ],
+
   education: [
     {
-      title: "B.S./B.Tech. Track in Chemical Engineering",
+      title: "B.S. Computer Science",
       org: "IISER Bhopal",
-      period: "2023 - Present",
-      details:
-        "Coursework includes thermodynamics, transport phenomena, reaction engineering, and numerical methods."
+      period: "2023 – Present",
+      details: "CGPA: 6.95 | Focus on ML, AI, Data Structures, and Systems"
     },
     {
-      title: "DIE Diploma",
-      org: "IIDM",
-      period: "Ongoing",
-      details:
-        "Applied industrial skills with focus on operations, systems, and practical implementation."
+      title: "B.S. Data Science (Online)",
+      org: "IIT Madras",
+      period: "2023 – Present",
+      details: "CGPA: 6.75 | Focus on statistics, ML, and data analysis"
+    },
+    {
+      title: "Senior Secondary & Secondary",
+      org: "St. Michael’s School, Raigarh",
+      period: "2021 – 2023",
+      details: "Senior: 8.48 CGPA | Secondary: 8.25 CGPA"
     }
   ],
+
   achievements: [
     {
-      year: "2026",
-      title: "Academic & Project Milestones",
-      details:
-        "Add your top achievements here (awards, ranks, paper submissions, project outcomes, competitions)."
+      year: "2025",
+      title: "IAS Summer Research Fellowship",
+      details: "Selected as Summer Research Fellow at IIT Roorkee"
     },
     {
-      year: "2025",
-      title: "Technical Development",
-      details:
-        "Completed domain-specific projects and coursework supporting chemical engineering and industry exposure."
+      year: "2023",
+      title: "IISER Aptitude Test Rank 95",
+      details: "Secured AIR 95 in national entrance exam"
+    },
+    {
+      year: "2022",
+      title: "Academic Excellence Award",
+      details: "Awarded by District Administration, Raigarh"
+    },
+    {
+      year: "2017–2022",
+      title: "RollBall State Champion",
+      details: "Winner in multiple state championships"
     }
   ],
+
   internships: [
     {
-      role: "Process/Research Intern",
-      org: "Organization Name",
-      period: "Month YYYY - Month YYYY",
+      role: "Summer Research Fellow",
+      org: "IIT Roorkee",
+      period: "May 2025 – Present",
       details:
-        "Worked on process analysis, data collection, and technical reporting. Replace with your actual internship details."
+        "Developed TinyML models using TensorFlow and CNNs. Deployed optimized models on Arduino for real-time clothing detection."
     }
   ],
+
   experience: [
     {
-      role: "Student Team Member / Project Contributor",
-      org: "Lab, Club, or Initiative",
-      period: "YYYY - Present",
+      role: "Student Development Council",
+      org: "IISER Bhopal",
+      period: "2023 – Present",
       details:
-        "Contributed to collaborative technical projects, documentation, and experimentation. Replace with specific work experience."
+        "Organized academic events, managed repositories, and contributed as a core team member."
+    },
+    {
+      role: "LLM Automation Agent Developer",
+      org: "Personal Project",
+      period: "2025 – Present",
+      details:
+        "Built AI agent using FastAPI and OpenAI APIs to automate multi-step workflows from natural language."
+    },
+    {
+      role: "AutoGraderAI Developer",
+      org: "Personal Project",
+      period: "2024",
+      details:
+        "Developed an automated assignment evaluation system using LLMs."
     }
   ],
+
   contact: {
-    email: "your.email@example.com",
+    email: "oscar23@iiserb.ac.in",
     phone: "+91-XXXXXXXXXX",
     location: "Bhopal, Madhya Pradesh, India",
-    linkedin: "https://www.linkedin.com/in/your-profile"
+    linkedin: "https://linkedin.com/in/oscar-minj",
+    github: "https://github.com/oscarminj"
   }
 };
 
@@ -120,10 +157,12 @@ function render() {
     <p><strong>Email:</strong> <a href="mailto:${profile.contact.email}">${profile.contact.email}</a></p>
     <p><strong>Phone:</strong> <a href="tel:${profile.contact.phone}">${profile.contact.phone}</a></p>
     <p><strong>Location:</strong> ${profile.contact.location}</p>
-    <p><strong>LinkedIn:</strong> <a href="${profile.contact.linkedin}" target="_blank" rel="noreferrer">${profile.contact.linkedin}</a></p>
+    <p><strong>LinkedIn:</strong> <a href="${profile.contact.linkedin}" target="_blank">${profile.contact.linkedin}</a></p>
+    <p><strong>GitHub:</strong> <a href="${profile.contact.github}" target="_blank">${profile.contact.github}</a></p>
   `;
 
-  byId("footerText").textContent = `© ${new Date().getFullYear()} ${profile.name} · Built with HTML, CSS, and JavaScript`;
+  byId("footerText").textContent =
+    `© ${new Date().getFullYear()} ${profile.name} · Built with HTML, CSS, and JavaScript`;
 }
 
 render();
